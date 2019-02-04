@@ -6,6 +6,8 @@ body {
     display: flex;
     flex-direction: column;
 
+    overflow-x: hidden;
+
     margin: 0;
 }
 
@@ -26,15 +28,83 @@ h2 {
     text-align: center;
 }
 
+p {
+    font-family: 'Lato', sans-serif;
+}
+
 #particles {
     position: absolute;
 }
 
 #portfolio {
-    height: 500px;
+    position: relative;
 
-    background-color: #062f4f;
-    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 600px;
+
+    background-color: #78c5ea;
+    color: #000;
+}
+
+#portfolio h2 {
+    position: absolute;
+    z-index: 999;
+    top: 0;
+
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 4px;
+}
+
+#portfolio .container {
+    display: flex;
+
+    width: 110%;
+    height: 100%;
+}
+
+.flex-item {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    padding-top: 50px;
+
+    transform: skewX(8deg);
+}
+
+.flex-item * {
+    transform: skewX(-8deg);
+}
+
+.flex-item p {
+    margin: 0 40px;
+
+    line-height: 25px;
+
+    color: #000;
+}
+
+.portfolio-pic {
+    background-color: #C9DD29;
+}
+
+.portfolio-pic img {
+    margin: 0 40px;
+
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.desc {
+    text-align: justify;
+
+    background-color: #78c5ea;
 }
 
 footer {
