@@ -15,21 +15,37 @@ header {
     position: relative;
 
 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                        url("assets/img/bg-splash.jpg");
+    background-color: #005c5d;
+    /* background-image: linear-gradient(rgba(119, 164, 216, 0.9), rgba(119, 164, 216, 0.9)),
+                        url("assets/img/bg-splash.jpg"); */
     background-size: 100%;
 
-    color: #000;
+    color: #FFF;
 }
 
 h2 {
     font-size: 3em;
+    font-family: 'Oswald', sans-serif;
+
+    letter-spacing: 4px;
 
     text-align: center;
+    color: #EEE;
 }
 
 p {
     font-family: 'Lato', sans-serif;
+}
+
+a {
+    font-family: 'Lato', sans-serif;
+
+    text-decoration: none;
+    color: #EEE;
+}
+
+a:hover {
+    color: #e04157;
 }
 
 #particles {
@@ -44,19 +60,15 @@ p {
     justify-content: center;
     align-items: center;
 
-    height: 600px;
+    height: 640px;
 
-    background-color: #78c5ea;
-    color: #000;
+    background-color: #3c3f44;
 }
 
 #portfolio h2 {
     position: absolute;
-    z-index: 999;
+    z-index: 3;
     top: 0;
-
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 4px;
 }
 
 #portfolio .container {
@@ -87,11 +99,11 @@ p {
 
     line-height: 25px;
 
-    color: #000;
+    color: #EEE;
 }
 
 .portfolio-pic {
-    background-color: #C9DD29;
+    background-color: #791414;
 }
 
 .portfolio-pic img {
@@ -101,16 +113,63 @@ p {
     max-height: 500px;
 }
 
+#coming-soon {
+    position: absolute;
+
+    height: 250px;
+    width: 120%;
+
+    text-align: center;
+    line-height: 250px;
+
+    background: repeating-linear-gradient(45deg, #000000EE, #000000EE 200px, #a0ac00ee 200px, #a0ac00ee 400px);
+    color: #EEE;
+
+    transform: rotate(-2deg);
+
+    font-family: 'Merriweather', serif;
+    font-size: 3em;
+    letter-spacing: 3px;
+}
+
 .desc {
     text-align: justify;
 
-    background-color: #78c5ea;
+    background-color: #9c2626;
 }
 
 footer {
-    height: 500px;
+    height: 400px;
 
-    background-color: #212529;
+    background-color: #290f00;
+    color: #EEE;
+}
+
+footer .container {
+    height: 50%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .container a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 190px;
+
+    margin: 20px;
+}
+
+footer .container span {
+    margin-top: 10px;
+}
+
+.contact-link {
+    margin-top: 15px;
 }
 
 .splash {
@@ -125,11 +184,10 @@ footer {
 
     height: 640px;
 
-    border: 3px solid #FFF;
+    border: 3px solid #EEE;
 
-    color: #FFF;
+    color: #EEE;
 
-    font-family: 'Lato', sans-serif;
 }
 
 .splash h1, .splash h2 {
@@ -138,16 +196,20 @@ footer {
 }
 
 .splash h2 {
-    /* letter-spacing: 6px; */
+    letter-spacing: 1px;
+
+    font-family: 'Oswald', sans-serif;
+
 
     font-size: 4.5em;
     /* margin: 0; */
 }
 
 .splash h1 {
-    font-family: 'Staatliches', cursive;
+    font-size: 2.3em;
 
-    letter-spacing: 3px;
+    font-family: 'Lato', cursive;
+    /* letter-spacing: 3px; */
 }
 
 .splash hr {
@@ -156,7 +218,7 @@ footer {
 
     border: none;
 
-    background-color: #FFF;
+    background-color: #EEE;
 }
 
 .splash p {
@@ -173,15 +235,15 @@ footer {
 
     background-color: #00000000;
 
-    font-family: 'Lato', sans-serif;
     letter-spacing: 0.5px;
     text-decoration: none;
     text-align: center;
-    line-height: 60px;
+    vertical-align: middle;
+    line-height: 52px;
 
-    color: #FFF;
+    color: #EEE;
 
-    border: 4px solid #FFF;
+    border: 4px solid #EEE;
 }
 
 nav {
@@ -193,13 +255,20 @@ nav {
     flex-direction: row;
     justify-content: space-between;
 
-    padding-top: 10px;
+    /* padding-top: 10px; */
 
     width: 100%;
     height: 120px;
 
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)); */
+}
+
+nav.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 80px;
+    transition: background-color 80ms, height 80ms linear;
+    /* transform:  */
 }
 
 nav ul{
