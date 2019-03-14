@@ -120,14 +120,17 @@ a:hover {
     width: 120%;
 
     text-align: center;
-    line-height: 250px;
+    line-height: 220px;
 
-    background: repeating-linear-gradient(45deg, #000000EE, #000000EE 200px, #a0ac00ee 200px, #a0ac00ee 400px);
+    background: #000000EE;
     color: #EEE;
+
+    border: 15px solid #ffff00cc;
+    border-image: repeating-linear-gradient(-55deg, transparent, transparent 5px, #ffff00cc 6px, #ffff00cc 10px) 25;
 
     transform: rotate(-2deg);
 
-    font-family: 'Merriweather', serif;
+    font-family: 'Sarabun', sans-serif;
     font-size: 3em;
     letter-spacing: 3px;
 }
