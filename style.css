@@ -73,6 +73,7 @@ a:hover {
 
 #portfolio .container {
     display: flex;
+    flex-wrap: wrap;
 
     width: 110%;
     height: 100%;
@@ -104,6 +105,7 @@ a:hover {
 
 .portfolio-pic {
     background-color: #791414;
+    min-width: 500px;
 }
 
 .portfolio-pic img {
@@ -136,6 +138,7 @@ a:hover {
 }
 
 .desc {
+    min-width: 500px;
     text-align: justify;
 
     background-color: #9c2626;
